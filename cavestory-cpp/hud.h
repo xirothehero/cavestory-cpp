@@ -6,12 +6,24 @@
 
 struct Graphics;
 
+/* HUD class
+* Holds information on game heads-up display
+*/
+
 class HUD {
 
 public:
 	HUD();
 	HUD(Graphics& graphics, Player& player);
+
+	/* void update
+	* Updates state of HUD elements
+	*/
 	void update(int elapsedTime, Player& player);
+
+	/* void draw
+	* Draws HUD elements to window
+	*/
 	void draw(Graphics& graphics);
 
 private:

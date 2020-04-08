@@ -1,7 +1,11 @@
+#include "graphics.h"
 #include "hud.h"
 
-#include "graphics.h"
+/* HUD class
+* Holds information on game heads-up display
+*/
 
+/* Constructors */
 HUD::HUD() {}
 
 HUD::HUD(Graphics& graphics, Player& player) {
@@ -15,6 +19,7 @@ HUD::HUD(Graphics& graphics, Player& player) {
 	_slash = Sprite(graphics, "sprites/TextBox.png", 72, 48, 8, 8, 100, 36);
 	_dashes = Sprite(graphics, "sprites/TextBox.png", 81, 51, 15, 11, 132, 26);
 }
+
 
 void HUD::update(int elapsedTime, Player& player) {
 	_player = player;

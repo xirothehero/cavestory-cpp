@@ -5,6 +5,10 @@
 #include <string>
 #include <vector>
 
+/* Utils class
+* Used to contain static utility methods
+*/
+
 class Utils {
 
 public:

@@ -2,8 +2,14 @@
 #include "graphics.h"
 #include "SDL.h"
 
+/* AnimatedTile class
+* Holds information on AnimatedTile from Tiled
+*/
+
+/* Constructor */
 AnimatedTile::AnimatedTile(std::vector<Vector2> tilesetPositions, int duration, SDL_Texture* tileset, Vector2 size, Vector2 pos) :
 	Tile(tileset, size, tilesetPositions.at(0), pos), _tilesetPositions(tilesetPositions), _duration(duration), _tileToDraw(0) {}
+
 
 void AnimatedTile::update(int elapsedTime) {
 	// Timer code

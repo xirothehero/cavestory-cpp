@@ -7,6 +7,7 @@
 * Holds all information for individual sprites
 */
 
+/* Constructors */
 Sprite::Sprite() {}
 
 Sprite::Sprite(Graphics& graphics, const std::string& filepath, int sourceX, int sourceY, int width, int height,
@@ -25,6 +26,7 @@ Sprite::Sprite(Graphics& graphics, const std::string& filepath, int sourceX, int
 	_boundingBox = Rectangle(_x, _y, width * globals::SPRITE_SCALE, height * globals::SPRITE_SCALE);
 }
 
+/* Destructor */
 Sprite::~Sprite() {}
 
 void Sprite::draw(Graphics& graphics, int x, int y) {

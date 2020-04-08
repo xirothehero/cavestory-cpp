@@ -19,16 +19,23 @@ public:
 private:
 
 	/* void gameLoop
-	*
 	* Initialize graphics and input and sprite
 	* Polls for Event
 	*/
 	void gameLoop();
 
-
+	/* void draw
+	* Draw all level, player, and HUD sprites to the window
+	*/
 	void draw(Graphics &graphics);
+
+	/* void update
+	* Update level, player, and HUD
+	* Check all collisions
+	*/
 	void update(float elapsedTime);
 
+	/* Fields */
 	Player _player;
 	Level _level;
 	HUD _hud;

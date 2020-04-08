@@ -4,7 +4,6 @@
 #include "globals.h"
 #include "graphics.h"
 #include "sprite.h"
-
 #include <map>
 #include <string>
 #include <vector>

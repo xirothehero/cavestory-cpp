@@ -6,6 +6,7 @@
 * Animates the sprite
 */
 
+/* Constructors */
 AnimatedSprite::AnimatedSprite() {}
 
 AnimatedSprite::AnimatedSprite(Graphics& graphics, const std::string& filepath, int sourceX, int sourceY, int width, int height,

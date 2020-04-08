@@ -5,6 +5,11 @@
 #include "rectangle.h"
 #include <cmath>
 
+/* Slope class
+* Represents a slope in the map
+* Used for collision calculations
+*/
+
 class Slope {
 
 public:
@@ -16,11 +21,24 @@ public:
 		}
 	}
 
+	/* Vector2 getP1
+	* Returns first point of slope line
+	*/
 	const inline Vector2 getP1() const { return _p1; }
+
+	/* Vector2 getP2
+	* Returns second point of slope line
+	*/
 	const inline Vector2 getP2() const { return _p2; }
 
+	/* float getSlope
+	* Returns slope of line
+	*/
 	const inline float getSlope() const { return _slope; }
 
+	/* bool collidesWith
+	* Determines collision with Rectangle parameter
+	*/
 	const bool collidesWith(const Rectangle& other) {
 		return
 			(other.getRight() >= _p2.x && other.getLeft() <= _p1.x && other.getTop() <= _p2.y && other.getBottom() >= _p1.y) ||

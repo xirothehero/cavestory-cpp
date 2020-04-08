@@ -1,18 +1,20 @@
+#include "globals.h"
 #include "graphics.h"
 #include "SDL.h"
 #include "SDL_image.h"
-#include "globals.h"
 
 /* Graphics class
 * Holds all information dealing with graphics for the game
 */
 
+/* Constructor */
 Graphics::Graphics() {
     SDL_CreateWindowAndRenderer(globals::SCREEN_WIDTH, globals::SCREEN_HEIGHT, 0, 
         &this->_window, &this->_renderer);              // Can access class variables with "this->"
     SDL_SetWindowTitle(_window, "CaveStory");           // Or just refer to them directly
 }
 
+/* Destructor */
 Graphics::~Graphics() {
     SDL_DestroyWindow(_window);
     SDL_DestroyRenderer(_renderer);

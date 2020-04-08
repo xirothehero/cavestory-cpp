@@ -3,6 +3,11 @@
 #include "level.h"
 #include "player.h"
 
+/* Player class
+* Holds information and logic for the player
+*/
+
+/* Constants for player movement */
 namespace player_constants {
 	const float WALK_SPEED = 0.2f;
 
@@ -12,6 +17,7 @@ namespace player_constants {
 	const float JUMP_SPEED = 0.7f;
 }
 
+/* Constructors */
 Player::Player() {}
 
 Player::Player(Graphics& graphics, Vector2 spawnPoint) :
@@ -23,6 +29,7 @@ Player::Player(Graphics& graphics, Vector2 spawnPoint) :
 	this->setUpAnimations();
 	this->playAnimation("IdleRight");
 }
+
 
 void Player::setUpAnimations() {
 	this->addAnimation(1, 0, 0, "IdleLeft", 16, 16, Vector2(0, 0));
@@ -106,7 +113,6 @@ void Player::lookDown() {
 void Player::stopLookingDown() {
 	_lookingDown = false;
 }
-
 
 void Player::jump() {
 	if (_grounded) {
@@ -192,6 +198,9 @@ void Player::gainHealth(int amount) {
 	_currentHealth += amount;
 	if (_currentHealth < 0) {
 		_currentHealth = 0;
+	}
+	if (_currentHealth > _maxHealth) {
+		_currentHealth = _maxHealth;
 	}
 }
 

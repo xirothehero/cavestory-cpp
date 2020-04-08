@@ -5,12 +5,23 @@
 #include "tile.h"
 #include <vector>
 
+/* AnimatedTile class
+* Holds information on AnimatedTile from Tiled
+*/
 
 class AnimatedTile : public Tile {
 
 public:
 	AnimatedTile(std::vector<Vector2> tilesetPositions, int duration, SDL_Texture* tileset, Vector2 size, Vector2 pos);
+
+	/* void update
+	* Updates state of animated tile
+	*/
 	void update(int elapsedTime);
+
+	/* void draw
+	* Draws animated tile to window
+	*/
 	void draw(Graphics& graphics);
 
 protected:
@@ -24,6 +35,7 @@ private:
 
 };
 
+/* Info required to construct an AnimatedTile */
 struct AnimatedTileInfo {
 public:
 	int tilesetFirstGid;

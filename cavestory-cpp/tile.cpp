@@ -2,11 +2,17 @@
 #include "graphics.h"
 #include "SDL.h"
 
+/* Tile class
+* Holds information for a tile from Tiled map
+*/
+
+/* Constructors */
 Tile::Tile() {}
 
 Tile::Tile(SDL_Texture* tileset, Vector2 size, Vector2 tilesetPosition, Vector2 position) :
 	_tileset(tileset), _size(size), _tilesetPosition(tilesetPosition),
 	_position(Vector2(position.x * globals::SPRITE_SCALE, position.y * globals::SPRITE_SCALE)) {}
+
 
 void Tile::update(int elapsedTime) {}
 

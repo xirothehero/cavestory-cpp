@@ -1,6 +1,7 @@
 #ifndef GLOBALS_H
 #define GLOBALS_H
 
+/* Constants for screen size and sprite scaling */
 namespace globals {
 	const int SCREEN_WIDTH = 640;
 	const int SCREEN_HEIGHT = 480;
@@ -8,6 +9,7 @@ namespace globals {
 	const float SPRITE_SCALE = 2.0f;
 }
 
+/* Sides for rectangles/bounding boxes for collision calculations */
 namespace sides {
 	enum Side {
 		TOP,
@@ -17,6 +19,9 @@ namespace sides {
 		NONE
 	};
 
+	/* Side getOppositeSide
+	* Get side opposite of side passed in
+	*/
 	const inline Side getOppositeSide(Side side) {
 		return
 			side == TOP ? BOTTOM :
@@ -27,6 +32,7 @@ namespace sides {
 	}
 }
 
+/* Movement and orientation directions */
 enum Direction {
 	LEFT,
 	RIGHT,
@@ -34,6 +40,7 @@ enum Direction {
 	DOWN
 };
 
+/* 2D Vector for storing (x, y) pairs */
 struct Vector2 {
 	int x, y;
 	

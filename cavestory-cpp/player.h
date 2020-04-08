@@ -10,13 +10,25 @@ struct Enemy;
 struct Graphics;
 struct Level;
 
+/* Player class
+* Holds information and logic for the player
+*/
+
 class Player : public AnimatedSprite {
 
 public:
 	Player();
 	Player(Graphics& graphics, Vector2 spawnPoint);
-	void draw(Graphics& graphics);
+	
+	/* void update
+	* Updates player position and fields
+	*/
 	void update(float elapsedTime);
+	
+	/* void draw
+	* Draws player sprite to window
+	*/
+	void draw(Graphics& graphics);
 
 	/* void moveLeft
 	* Moves the player left by -dx
@@ -58,7 +70,14 @@ public:
 	*/
 	void jump();
 
+	/* void animationDone
+	* Logic that happens when an animation ends
+	*/
 	virtual void animationDone(std::string currentAnim);
+
+	/* void setUpAnimations
+	* A required function that sets up all animations for a sprite
+	*/
 	virtual void setUpAnimations();
 
 	/* void handleTileCollisions
@@ -81,12 +100,30 @@ public:
 	*/
 	void handleEnemyCollisions(std::vector<Enemy*>& others);
 
+	/* void getX
+	* Returns X position of player sprite in window
+	*/
 	const float getX() const;
+
+	/* void getY
+	* Returns Y position of player sprite in window
+	*/
 	const float getY() const;
 
+	/* void getMaxHealth
+	* Returns player's maximum health
+	*/
 	const inline int getMaxHealth() const { return _maxHealth; }
+
+	/* void getCurrentHealth
+	* Returns player's current health
+	*/
 	const inline int getCurrentHealth() const { return _currentHealth; }
 
+	/* void gainHealth
+	* Increases player's current health by given amount
+	* Can also be used to decrease health
+	*/
 	void gainHealth(int amount);
 
 private:

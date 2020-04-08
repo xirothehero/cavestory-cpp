@@ -10,8 +10,13 @@
 #include <cmath>
 #include <sstream>
 
+/* Level class
+* Manages map generation and keeps track of entities within level
+*/
+
 using namespace tinyxml2;
 
+/* Constructors */
 Level::Level() {}
 
 Level::Level(std::string mapName, Graphics& graphics) :
@@ -20,7 +25,9 @@ Level::Level(std::string mapName, Graphics& graphics) :
 	loadMap(_mapName, graphics);
 }
 
+/* Destructor */
 Level::~Level() {}
+
 
 std::vector<Rectangle> Level::checkTileCollisions(const Rectangle& other) {
 	std::vector<Rectangle> others;
