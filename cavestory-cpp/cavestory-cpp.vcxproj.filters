@@ -1,0 +1,190 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="Header Files">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hh;hpp;hxx;hm;inl;inc;ipp;xsd</Extensions>
+    </Filter>
+    <Filter Include="Resource Files">
+      <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
+      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
+    </Filter>
+    <Filter Include="Resource Files\sprites">
+      <UniqueIdentifier>{c43d6440-13ac-4ad3-96af-518b7023f7ed}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Resource Files\backgrounds">
+      <UniqueIdentifier>{ebebac05-8510-4277-bef0-210d391ae3d2}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Resource Files\tilesets">
+      <UniqueIdentifier>{4d80c69d-f187-45ea-8faa-c50a71233f8d}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Resource Files\maps">
+      <UniqueIdentifier>{728c206f-27eb-45c3-9281-45ab1ea80e38}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="main.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="graphics.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="game.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="input.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="sprite.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="animatedsprite.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="player.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="level.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="tinyxml2.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="tile.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="animatedtile.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="hud.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="enemy.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="graphics.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="game.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="input.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="sprite.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="globals.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="animatedsprite.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="player.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="level.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="tinyxml2.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="tile.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="rectangle.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="utils.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="slope.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="animatedtile.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="hud.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="door.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="enemy.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <Image Include="sprites\MyChar.png">
+      <Filter>Resource Files\sprites</Filter>
+    </Image>
+    <Image Include="backgrounds\bkWater.png">
+      <Filter>Resource Files\backgrounds</Filter>
+    </Image>
+    <Image Include="backgrounds\bk0.png">
+      <Filter>Resource Files\backgrounds</Filter>
+    </Image>
+    <Image Include="backgrounds\bkBlack.png">
+      <Filter>Resource Files\backgrounds</Filter>
+    </Image>
+    <Image Include="backgrounds\bkBlue.png">
+      <Filter>Resource Files\backgrounds</Filter>
+    </Image>
+    <Image Include="backgrounds\bkFall.png">
+      <Filter>Resource Files\backgrounds</Filter>
+    </Image>
+    <Image Include="backgrounds\bkFog.png">
+      <Filter>Resource Files\backgrounds</Filter>
+    </Image>
+    <Image Include="backgrounds\bkGard.png">
+      <Filter>Resource Files\backgrounds</Filter>
+    </Image>
+    <Image Include="backgrounds\bkGray.png">
+      <Filter>Resource Files\backgrounds</Filter>
+    </Image>
+    <Image Include="backgrounds\bkGreen.png">
+      <Filter>Resource Files\backgrounds</Filter>
+    </Image>
+    <Image Include="backgrounds\bkMaze.png">
+      <Filter>Resource Files\backgrounds</Filter>
+    </Image>
+    <Image Include="backgrounds\bkMoon.png">
+      <Filter>Resource Files\backgrounds</Filter>
+    </Image>
+    <Image Include="backgrounds\bkRed.png">
+      <Filter>Resource Files\backgrounds</Filter>
+    </Image>
+    <Image Include="tilesets\PrtCave.png">
+      <Filter>Resource Files\tilesets</Filter>
+    </Image>
+    <Image Include="tilesets\NpcSym.png">
+      <Filter>Resource Files\tilesets</Filter>
+    </Image>
+    <Image Include="sprites\NpcCemet.png">
+      <Filter>Resource Files\sprites</Filter>
+    </Image>
+    <Image Include="sprites\TextBox.png">
+      <Filter>Resource Files\sprites</Filter>
+    </Image>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="maps\map1.tmx">
+      <Filter>Resource Files\maps</Filter>
+    </None>
+    <None Include="tilesets\prtcave.tsx">
+      <Filter>Resource Files\tilesets</Filter>
+    </None>
+    <None Include="tilesets\NpcSym.tsx">
+      <Filter>Resource Files\tilesets</Filter>
+    </None>
+    <None Include="map2.tmx">
+      <Filter>Resource Files\maps</Filter>
+    </None>
+  </ItemGroup>
+</Project>
